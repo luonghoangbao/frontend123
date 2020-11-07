@@ -10,21 +10,21 @@
     <header>
         <div class="header-top">
             <div class="title-header">
-                <img src="http://demo.saharathemes.com/magento2/sahara_fashion1/pub/media/logo/stores/1/logo.png" alt="logo">
+                <img src="./images/SaharaLogo.png" alt="logo">
             </div>
             <div class="topnav" id="myTopnav">
-                <a href="#about">Compare Products</a>
-                <a href="#services">My account</a>
+                <a href="#about">My account</a>
+                <a href="#services">Compare Products</a>
                 <a href="#contact-me">My wish list</a>
                 <a href="#">Sign in</a>
-                <button>My cart</button>
+                <button class="myCart">My cart</button>
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
         <div class="header-bottom">
             <div class="menu-bottom">
-                <ul>
-                    <li><a href="#">Home</a></li>
+                <ul class="list-menu-bottom">
+                    <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Women</a></li>
                     <li><a href="#">Men</a></li>
                     <li><a href="#">Accessories</a></li>
@@ -34,48 +34,107 @@
             </div>
             <div class="menu-search">
                 <input type="text" placeholder="Search entire store here..." name="" />
+                <input type="button" id="search" />
             </div>
         </div>
     </header>
     <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanntium</p> -->
     <nav id="banner">
         <div class="content-banner">
-            <img src="http://demo.saharathemes.com/magento2/sahara_fashion1/pub/media/Plazathemes/bannerslider/images/r/i/right-banner7-wide.jpg">
+            <img src="./images/slide1.jpg" alt="slide1">
             <div class="text-banner">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanntium</p>
-                <button>Shop Now</button>
+                <button class="shop-now">Shop Now</button>
             </div>
         </div>
     </nav>
-    <nav id="main-content">
-        <div class="side-bar">
-            <div class="categories">
-                <label>Categories</label>
-                <ul>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Jewely</a></li>
-                </ul>
+    <nav id="content">
+        <nav class="main-content">
+            <div class="side-bar">
+                <div class="categories">
+                    <label>Categories</label>
+                    <ul class="list-categories">
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jewely</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <label>Newsletter</label>
+                    <form action="" method="Post">
+                        <span>Sign up for newsletter</span>
+                        <input type="text" id="" name="email" placeholder="Enter your email address" />
+                        <button class="sign-up">Sign up</button>
+                    </form>
+                </div>
+                <div class="get-in-touch">
+                    <span>Get in touch !</span>
+                    <div class="icon-social">
+                        <img src="./images/img-social1.png" alt="social1"></li>
+                        <img src="./images/img-social2.png" alt="social2"></>
+                        <img src="./images/img-social3.png" alt="social3"></li>
+                        <img src="./images/img-social4.png" alt="social4"></li>
+                    </div>
+                </div>
+                <div class="list-cart">
+                    <div class="cart1">
+                        <img src="./images/img-banner-left1.png" alt="">
+                        <label>FREE SHIPPING !</label>
+                        <span>FREE SHIPPING ON ORDER OVER $99</span>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <button class="more">View More</button>
+                    </div>
+                    <div class="cart2">
+                        <img src="./images/img-banner-left2.png" alt="">
+                        <label>ONLINE SUPPORT</label>
+                        <span>ONLINE SUPPORT 24/7</span>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <button class="more">View More</button>
+                    </div>
+                    <div class="cart3">
+                        <img src="./images/img-banner-left3.png" alt="">
+                        <label>MONEY BACK!</label>
+                        <span>30 DAYS MONEY BACK GUARANTEE</span>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <button class="more">View More</button>
+                    </div>
+                </div>
             </div>
-            <div class="newsletter">
-                <label>Newsletter</label>
-                <form action="" method="Post">
-                    <span>Sign up for newsletter</span>
-                    <input type="text" id="" name="email" placeholder="Enter your email address" />
-                    <button>Sign Up</button>
-                </form>
+            <div class="main-list">
+                <div class="sale-clothes">
+                    <img src="./images/imgSales1.png" alt="imgSales1" id="img1">
+                    <img src="./images/imgSales2.png" alt="imgSales2" id="img2">
+                    <img src="./images/imgSales3.png" alt="imgSales3" id="img3">
+                    <img src="./images/imgSales4.png" alt="imgSales4" id="img4">
+                    <img src="./images/imgSales5.png" alt="imgSales5" id="img5">
+                </div>
+                <div class="new-clothes">
+                    <div class="side-product">
+                        <label>Weekly Feature</label>
+                        <ul class="product">
+                            <li><a href="#">New Products</a></li>
+                            <li><a href="#">OnSale</a></li>
+                            <li><a href="#">Feature Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-product">
+                        <div class="item">
+                            <img src="./images/item1.jpg" alt="item1">
+                        </div>
+                        <div class="item">
+                            <img src="./images/item1.jpg" alt="item1">
+                        </div>
+                        <div class="item">
+                            <img src="./images/item1.jpg" alt="item1">
+                        </div>
+                        <div class="item">
+                            <img src="./images/item1.jpg" alt="item1">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="main-list">
-            <div class="sale-clothes">
-                <img src="http://demo.saharathemes.com/magento2/sahara_fashion1/pub/media/wysiwyg/banner-home-static1.png" alt="">
-                <img src="http://demo.saharathemes.com/magento2/sahara_fashion1/pub/media/wysiwyg/banner-home-static2.png" alt="">
-                <img src="http://demo.saharathemes.com/magento2/sahara_fashion1/pub/media/wysiwyg/banner-home-static3.png" alt="">
-                <img src="http://demo.saharathemes.com/magento2/sahara_fashion1/pub/media/wysiwyg/banner-home-static4.png" alt="">
-                <img src="http://demo.saharathemes.com/magento2/sahara_fashion1/pub/media/wysiwyg/banner-home-static5.png" alt="">
-            </div>
-        </div>
+        </nav>
     </nav>
     <script type="text/javascript" src="index.js"></script>
 </body>

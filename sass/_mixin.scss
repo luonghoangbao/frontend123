@@ -1,0 +1,53 @@
+@import './variables';
+
+@mixin cart{
+    background-color: #fff;
+    display: block;
+    max-width: auto;
+    max-height: 450px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 20px;
+    img:hover{
+        cursor: pointer;
+    }
+    label{
+        display: block;
+        font-size: 18px;
+    }
+    span{
+        padding: 10px 0;
+        display: block;
+        font-size: 13px;
+        color: #555;
+        border-bottom: 1px solid #000000;
+    }
+    p{
+        display: inline-block;
+        font-size: 13px;
+        padding: 10px 0;
+        color: #555;
+    }
+    .more{
+        background-color: #999999;
+        display: block;
+        margin-top: 5px;
+        padding: 8px 10px;
+        border:none;
+        max-width: auto;
+        border-radius: 5px;
+        text-align: center;
+        white-space: nowrap;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+            background-color: $hover-color;
+            transition: 0.5s all ease-in-out;
+        }
+    }
+}
