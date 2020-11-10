@@ -10,13 +10,13 @@
     <header>
         <div class="header-top">
             <div class="title-header">
-                <img src="./images/SaharaLogo.png" alt="logo">
+                <img class="header-img" src="./images/SaharaLogo.png" alt="logo">
             </div>
             <div class="topnav" id="myTopnav">
-                <a href="#about">My account</a>
-                <a href="#services">Compare Products</a>
-                <a href="#contact-me">My wish list</a>
-                <a href="#">Sign in</a>
+                <a id="txt" href="#about">My account</a>
+                <a id="txt" href="#services">Compare Products</a>
+                <a id="txt" href="#contact-me">My wish list</a>
+                <a id="txt" href="#">Sign in</a>
                 <button class="myCart">My cart</button>
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
@@ -24,16 +24,16 @@
         <div class="header-bottom">
             <div class="menu-bottom">
                 <ul class="list-menu-bottom">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Jewely</a></li>
-                    <li><a href="#">Custome menu</a></li>
+                    <li class="list-bottom"><a href="#" class="active">Home</a></li>
+                    <li class="list-bottom"><a href="#" class="href-btn">Women</a></li>
+                    <li class="list-bottom"><a href="#" class="href-btn">Men</a></li>
+                    <li class="list-bottom"><a href="#" class="href-btn">Accessories</a></li>
+                    <li class="list-bottom"><a href="#" class="href-btn">Jewely</a></li>
+                    <li class="list-bottom"><a href="#" class="href-btn">Customers</a></li>
                 </ul>
             </div>
             <div class="menu-search">
-                <input type="text" placeholder="Search entire store here..." name="" />
+                <input id="text" type="text" placeholder="Search entire store here..." name="" />
                 <input type="button" id="search" />
             </div>
         </div>
@@ -41,9 +41,9 @@
     <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanntium</p> -->
     <nav id="banner">
         <div class="content-banner">
-            <img src="./images/slide1.jpg" alt="slide1">
+            <img class="slide1" src="./images/slide1.jpg" alt="slide1">
             <div class="text-banner">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanntium</p>
+                <p class="txt-banner">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusanntium</p>
                 <button class="shop-now">Shop Now</button>
             </div>
         </div>
@@ -52,91 +52,89 @@
         <nav class="main-content">
             <div class="side-bar">
                 <div class="categories">
-                    <label>Categories</label>
+                    <label class="label">Categories</label>
                     <ul class="list-categories">
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jewely</a></li>
+                        <li class="list-category"><a class="href-category" href="#">Women</a></li>
+                        <li class="list-category"><a class="href-category"  href="#">Men</a></li>
+                        <li class="list-category"><a class="href-category"  href="#">Accessories</a></li>
+                        <li class="list-category"><a class="href-category" href="#">Jewely</a></li>
                     </ul>
                 </div>
                 <div class="newsletter">
-                    <label>Newsletter</label>
-                    <form action="" method="Post">
-                        <span>Sign up for newsletter</span>
-                        <input type="text" id="" name="email" placeholder="Enter your email address" />
+                    <label class="news">Newsletter</label>
+                    <form id="form" action="" method="Post">
+                        <span id="sign-up">Sign up for newsletter</span>
+                        <input type="text" id="email" name="email" placeholder="Enter your email address" />
                         <button class="sign-up">Sign up</button>
                     </form>
                 </div>
                 <div class="get-in-touch">
                     <span>Get in touch !</span>
                     <div class="icon-social">
-                        <img src="./images/img-social1.png" alt="social1"></li>
-                        <img src="./images/img-social2.png" alt="social2"></>
-                        <img src="./images/img-social3.png" alt="social3"></li>
-                        <img src="./images/img-social4.png" alt="social4"></li>
+                        <img src="./images/img-social1.png" alt="social1" id="social-img"></li>
+                        <img src="./images/img-social2.png" alt="social2" id="social-img"></li>
+                        <img src="./images/img-social3.png" alt="social3" id="social-img"></li>
+                        <img src="./images/img-social4.png" alt="social4" id="social-img"></li>
                     </div>
                 </div>
                 <div class="list-cart">
                     <div class="cart1">
-                        <img src="./images/img-banner-left1.png" alt="">
-                        <label>FREE SHIPPING !</label>
-                        <span>FREE SHIPPING ON ORDER OVER $99</span>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <img src="./images/img-banner-left1.png" alt="" class="img-cart">
+                        <label class="label-cart">FREE SHIPPING !</label>
+                        <span class="span-cart">FREE SHIPPING ON ORDER OVER $99</span>
+                        <p class="text-cart">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                         <button class="more">View More</button>
                     </div>
                     <div class="cart2">
-                        <img src="./images/img-banner-left2.png" alt="">
-                        <label>ONLINE SUPPORT</label>
-                        <span>ONLINE SUPPORT 24/7</span>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <img src="./images/img-banner-left2.png" alt="" class="img-cart">
+                        <label class="label-cart">ONLINE SUPPORT</label>
+                        <span class="span-cart">ONLINE SUPPORT 24/7</span>
+                        <p class="text-cart">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                         <button class="more">View More</button>
                     </div>
                     <div class="cart3">
-                        <img src="./images/img-banner-left3.png" alt="">
-                        <label>MONEY BACK!</label>
-                        <span>30 DAYS MONEY BACK GUARANTEE</span>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <img src="./images/img-banner-left3.png" alt="" class="img-cart">
+                        <label class="label-cart">MONEY BACK!</label>
+                        <span class="span-cart">30 DAYS MONEY BACK GUARANTEE</span>
+                        <p class="text-cart">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                         <button class="more">View More</button>
                     </div>
                 </div>
             </div>
             <div class="main-list">
                 <div class="sale-clothes">
-                    <img src="./images/imgSales1.png" alt="imgSales1" id="img1">
-                    <img src="./images/imgSales2.png" alt="imgSales2" id="img2">
-                    <img src="./images/imgSales3.png" alt="imgSales3" id="img3">
-                    <img src="./images/imgSales4.png" alt="imgSales4" id="img4">
-                    <img src="./images/imgSales5.png" alt="imgSales5" id="img5">
+                    <img src="./images/imgSales1.png" alt="imgSales1" id="img1" class="sale-img">
+                    <img src="./images/imgSales2.png" alt="imgSales2" id="img2" class="sale-img">
+                    <img src="./images/imgSales3.png" alt="imgSales3" id="img3" class="sale-img">
+                    <img src="./images/imgSales4.png" alt="imgSales4" id="img4" class="sale-img">
+                    <img src="./images/imgSales5.png" alt="imgSales5" id="img5" class="sale-img">
                 </div>
                 <div class="new-clothes">
                     <div class="side-product">
-                        <div class="side">
-                            <label>Weekly Feature</label>
-                            <ul class="product">
-                                <li class="active"><a href="#">New Products</a></li>
-                                <li><a href="#">OnSale</a></li>
-                                <li><a href="#">Feature Products</a></li>
+                            <label class="label-product">Weekly Feature</label>
+                            <ul class="product-clothes">
+                                <li class="bth"><a href="#" id="click">New Products</a></li>
+                                <li class="bth"><a href="#" id="click">OnSale</a></li>
+                                <li class="bth"><a href="#" id="click">Feature Products</a></li>
                             </ul>
-                        </div>
                     </div>
                     <div class="list-product">
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
+                            <img src="./images/item1.jpg" alt="item1" id="item-img">
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
+                            <img src="./images/item1.jpg" alt="item1" id="item-img">
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
+                            <img src="./images/item1.jpg" alt="item1" id="item-img">
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
+                            <img src="./images/item1.jpg" alt="item1" id="item-img">
                         </div>
                     </div>
                 </div>
                 <div class="title">
-                    <span>Popular Shirts</span>
+                    <span class="title-span">Popular Shirts</span>
                 </div>
                 <div class="popular-clothes">
                     <div class="list-type">
@@ -145,38 +143,37 @@
                             <button class="jewely">Jewely</button>
                         </div>
                         <div class="pagination">
-                            <button class="down"><</button>
+                            <button class="next"><</button>
                             <button class="next">></button>
                         </div>
                     </div>
                     <div class="product">
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Elit</a>
-                            <p>$60.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Elit</a>
+                            <p class="price-item">$60.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Primis InFau</a>
-                            <p>$30.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Primis InFau</a>
+                            <p class="price-item">$30.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Calivia Orin</a>
-                            <p>$40.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Calivia Orin</a>
+                            <p class="price-item">$40.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Etiam Granda</a>
-                            <p>$50.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Etiam Granda</a>
+                            <p class="price-item">$50.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Eli</a>
-                            <p>$70.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Eli</a>
+                            <p class="price-item">$70.00</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="popular-clothes">
                     <div class="list-type">
@@ -185,38 +182,37 @@
                             <button class="jewely">Jewely</button>
                         </div>
                         <div class="pagination">
-                            <button class="down"><</button>
+                            <button class="next"><</button>
                             <button class="next">></button>
                         </div>
                     </div>
                     <div class="product">
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Elit</a>
-                            <p>$60.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Elit</a>
+                            <p class="price-item">$60.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Primis InFau</a>
-                            <p>$30.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Primis InFau</a>
+                            <p class="price-item">$30.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Calivia Orin</a>
-                            <p>$40.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Calivia Orin</a>
+                            <p class="price-item">$40.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Etiam Granda</a>
-                            <p>$50.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Etiam Granda</a>
+                            <p class="price-item">$50.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Eli</a>
-                            <p>$70.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Eli</a>
+                            <p class="price-item">$70.00</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="popular-clothes">
                     <div class="list-type">
@@ -225,38 +221,37 @@
                             <button class="jewely">Jewely</button>
                         </div>
                         <div class="pagination">
-                            <button class="down"><</button>
+                            <button class="next"><</button>
                             <button class="next">></button>
                         </div>
                     </div>
                     <div class="product">
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Elit</a>
-                            <p>$60.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Elit</a>
+                            <p class="price-item">$60.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Primis InFau</a>
-                            <p>$30.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Primis InFau</a>
+                            <p class="price-item">$30.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Calivia Orin</a>
-                            <p>$40.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Calivia Orin</a>
+                            <p class="price-item">$40.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Etiam Granda</a>
-                            <p>$50.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Etiam Granda</a>
+                            <p class="price-item">$50.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Eli</a>
-                            <p>$70.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Eli</a>
+                            <p class="price-item">$70.00</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="popular-clothes">
                     <div class="list-type">
@@ -265,38 +260,37 @@
                             <button class="jewely">Jewely</button>
                         </div>
                         <div class="pagination">
-                            <button class="down"><</button>
+                            <button class="next"><</button>
                             <button class="next">></button>
                         </div>
                     </div>
                     <div class="product">
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Elit</a>
-                            <p>$60.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Elit</a>
+                            <p class="price-item">$60.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Primis InFau</a>
-                            <p>$30.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Primis InFau</a>
+                            <p class="price-item">$30.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Calivia Orin</a>
-                            <p>$40.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Calivia Orin</a>
+                            <p class="price-item">$40.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Etiam Granda</a>
-                            <p>$50.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Etiam Granda</a>
+                            <p $50.00 class="price-item">$50.00</p>
                         </div>
                         <div class="item">
-                            <img src="./images/item1.jpg" alt="item1">
-                            <a>Accumsan Eli</a>
-                            <p>$70.00</p>
+                            <img src="./images/item1.jpg" alt="item1" class="img-product">
+                            <a class="name-item">Accumsan Eli</a>
+                            <p class="price-item">$70.00</p>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </nav>
@@ -310,7 +304,7 @@
             <img src="./images/logo5.png" alt="logo5">
             <img src="./images/logo6.png" alt="logo6">
             <div class="pagination">
-                <button class="down"><</button>
+                <button class="next"><</button>
                 <button class="next">></button>
             </div>
         </div>
@@ -319,62 +313,62 @@
         <div class="list-service">
             <div class="first-service">
                 <div class="about">
-                    <label>About Us</label>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blan-ditiis praesentium voluptatum deleniti
+                    <label class="label-footer">About Us</label>
+                    <p class="text-footer">At vero eos et accusamus et iusto odio dignissimos ducimus qui blan-ditiis praesentium voluptatum deleniti
                     atque corrupti quos dolores et quas molestias...</p>
-                    <img src="./images/SaharaLogo.png" alt="logo">
+                    <img src="./images/SaharaLogo.png" alt="logo" class="img-footer">
                 </div>
                 <div class="support">
-                    <label>Our Support</label>
-                    <ul>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Your Account</a></li>
-                        <li><a href="#">Advanced Search</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Contact Us/a></li>                         
+                    <label class="label-service">Our Support</label>
+                    <ul class="ul-service">
+                        <li class="li-service"><a href="#" class="a-service">Sitemap</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Privacy Policy</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Your Account</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Advanced Search</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Terms & Condition</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Contact Us/a></li>                         
                     </ul>
                 </div>
             </div>
             <div class="second-service">
                 <div class="service">
-                    <a>Our Service</a>
-                    <ul>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Your Account</a></li>
-                        <li><a href="#">Advanced Search</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Contact Us/a></li>                         
+                    <a class="label-service">Our Service</a>
+                    <ul class="ul-service">
+                        <li class="li-service"><a href="#" class="a-service">Sitemap</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Privacy Policy</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Your Account</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Advanced Search</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Terms & Condition</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Contact Us/a></li>                         
                     </ul>
                 </div>
                 <div class="information">
-                    <a>Information</a>
-                    <ul>
-                        <li><a href="#">Sitemap</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Your Account</a></li>
-                        <li><a href="#">Advanced Search</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Contact Us/a></li>                         
+                    <a class="label-service">Information</a>
+                    <ul class="ul-service">
+                        <li class="li-service"><a href="#" class="a-service">Sitemap</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Privacy Policy</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Your Account</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Advanced Search</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Terms & Condition</a></li>
+                        <li class="li-service"><a href="#" class="a-service">Contact Us/a></li>                         
                     </ul>
                 </div>
             </div>
         </div>
         <div class="detail-us">
             <div class="text">
-                <a class="title-link">About Us </a><a class="lin">Customer Service </a><a class="lin">Privacy Policy</a><a> 2017 Magento Demo Store. All Rights Reserved.</a>
+                <a class="title-link">About Us </a>&nbsp;<a class="title-link">Customer Service </a>&nbsp;<a class="title-link">Privacy Policy</a><a> 2017 Magento Demo Store. All Rights Reserved.</a>
                 <br>
                 <a class="link">Site Map</a> | <a class="link">Search Terms</a> | 
                 <a class="link">Advanced Search</a> | <a class="link">Orders And Returns</a> | <a class="link">Contact Us</a>
             </div>
            <div class="social">
-               <img src="./images/social1.png" alt="social1">
-               <img src="./images/social2.png" alt="social2">
-               <img src="./images/social3.png" alt="social3">
-               <img src="./images/social4.png" alt="social4">
-               <img src="./images/social5.png" alt="social5">
-               <img src="./images/social6.png" alt="social6">
+               <img src="./images/social1.png" alt="social1" id="img-social">
+               <img src="./images/social2.png" alt="social2" id="img-social">
+               <img src="./images/social3.png" alt="social3" id="img-social">
+               <img src="./images/social4.png" alt="social4" id="img-social">
+               <img src="./images/social5.png" alt="social5" id="img-social">
+               <img src="./images/social6.png" alt="social6" id="img-social">
            </div>
         </div>
     </footer>
