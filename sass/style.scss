@@ -1,12 +1,12 @@
-@import './variables';
-@import './reset';
-@import './mixin';
+@import "./variables";
+@import "./reset";
+@import "./mixin";
 
 body {
-  font-family: $font-stack;
-  background-color: $background;
-  max-width: 100%;
-  height: 3200px;
+    font-family: $font-stack;
+    background-color: $background;
+    max-width: 100%;
+    height: 3200px;
 }
 /*--header--*/
 header {
@@ -42,8 +42,8 @@ header {
 
 .topnav {
     max-height: auto;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     max-width: 70%;
     overflow: hidden;
 
@@ -59,19 +59,19 @@ header {
         text-transform: uppercase;
 
         &:hover {
-            border:none;
+            border: none;
             color: $hover-color;
         }
     }
 
-    .icon{
+    .icon {
         @extend #txt;
     }
 
     .myCart {
         background: $primary-color;
-        background-image: url('../images/cart-shopping.png'); 
-        background-repeat: no-repeat;     
+        background-image: url("../images/cart-shopping.png");
+        background-repeat: no-repeat;
         background-position: 5px;
         text-align: center;
         padding: 10px 30px;
@@ -100,7 +100,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background:none;
+    background: none;
     padding: 10px 0px;
     max-width: 100%;
 
@@ -113,7 +113,7 @@ header {
             box-shadow: none;
             width: 100%;
 
-            .list-bottom{
+            .list-bottom {
                 border: 0;
                 padding: 0 15px;
 
@@ -150,16 +150,16 @@ header {
         }
 
         #search {
-            background-image: url('../images/seachbutton.png'); 
-            background-color: transparent; 
-            background-repeat: no-repeat;  
-            background-position: 0px 0px;  
-            border: none;           
-            cursor: pointer;       
-            height: 16px;           
-            padding-left: 16px;     
+            background-image: url("../images/seachbutton.png");
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            border: none;
+            cursor: pointer;
+            height: 16px;
+            padding-left: 16px;
             vertical-align: middle;
-            outline: none; 
+            outline: none;
 
             &::placeholder {
                 color: $font-color;
@@ -167,7 +167,7 @@ header {
 
             &:hover {
                 transition: 0.5s all;
-                transform:translate3d(0,0,0) rotate(45deg); 
+                transform: translate3d(0, 0, 0) rotate(45deg);
             }
         }
     }
@@ -210,7 +210,7 @@ header {
             }
 
             .shop-now {
-                background-image: url('../images/download-shop-now.png');
+                background-image: url("../images/download-shop-now.png");
                 background-repeat: no-repeat;
                 background-position: 5px;
                 background-color: $hover-color;
@@ -224,15 +224,14 @@ header {
                 padding-left: 25px;
                 font-size: 15px;
                 color: $background;
-                
+
                 &:hover {
-                    background-color:#90b37f;
+                    background-color: #90b37f;
                     transition: all 0.5s ease-in-out;
                 }
             }
         }
     }
-
 }
 /* --end banner-- */
 #content {
@@ -244,7 +243,7 @@ header {
         display: block;
         padding: 50px 0;
         max-width: 920px;
-        display:flex;
+        display: flex;
         justify-content: space-evenly;
         margin-left: auto;
         margin-right: auto;
@@ -269,12 +268,12 @@ header {
                 .list-categories {
                     padding: 25px 20px;
 
-                    .list-category{
+                    .list-category {
                         padding: 3px;
 
                         .href-category {
                             font-size: 15px;
-                            color:$text-color;
+                            color: $text-color;
 
                             &:hover {
                                 color: $hover-color;
@@ -317,7 +316,7 @@ header {
                         background-color: $btn-more;
                         display: block;
                         padding: 8px 10px;
-                        border:none;
+                        border: none;
                         max-width: 63px;
                         border-radius: 5px;
                         text-align: center;
@@ -349,7 +348,7 @@ header {
                             opacity: 0.5;
                         }
                     }
-                    
+
                     #social-img:not(:first-child) {
                         padding-left: 5px;
                         margin: 10px 0;
@@ -441,7 +440,7 @@ header {
                     grid-column-start: 2;
                     grid-column-end: 3;
                     grid-row-start: 4;
-                    grid-row-end: 4 ;
+                    grid-row-end: 4;
                 }
 
                 #img5 {
@@ -508,9 +507,8 @@ header {
                             }
                         }
                     }
-                    
                 }
-                
+
                 .list-product {
                     width: 1700px;
                     overflow-x: scroll;
@@ -602,7 +600,7 @@ header {
                     .pagination {
                         .next {
                             background-color: $hover-next;
-                            padding: 5px;       
+                            padding: 5px;
                             border: none;
                             color: $background;
                             width: 31px;
@@ -620,15 +618,15 @@ header {
                     overflow: hidden;
                     width: 100%;
                     border: 1px solid $border-left;
-                    margin:0;
-                    padding:0;
+                    margin: 0;
+                    padding: 0;
 
                     .item {
                         border-left: 1px solid $border-left;
                         float: left;
                         max-width: 100%;
-                        margin:0;
-                        padding:0;
+                        margin: 0;
+                        padding: 0;
                         display: flex;
                         flex-direction: column;
 
@@ -638,10 +636,10 @@ header {
                             font-size: 13px;
 
                             &:hover {
-                                color: $hover-color; 
+                                color: $hover-color;
                             }
                         }
-                        
+
                         .price-item {
                             padding: 0 10px;
                             color: $hover-color;
@@ -660,7 +658,6 @@ header {
             }
         }
     }
-    
 }
 /* --end content-- */
 
@@ -677,13 +674,13 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-left:  auto;
+        margin-left: auto;
         margin-right: auto;
-        
+
         .pagination {
             .next {
                 background-color: $bg;
-                padding: 5px;       
+                padding: 5px;
                 border: none;
                 color: $background;
                 width: 31px;
@@ -701,13 +698,13 @@ header {
     background: $background-footer;
     color: $font-color;
 
-    .list-service {    
+    .list-service {
         padding: 32px 24px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         max-width: 1200px;
-        margin:0 auto;
+        margin: 0 auto;
         border-bottom: 1px solid $border-footer;
 
         .first-service {
@@ -718,7 +715,7 @@ header {
 
             .about {
                 border-right: 1px solid $border-footer;
-                padding:0 10px;
+                padding: 0 10px;
                 width: 250px;
 
                 .label-footer {
@@ -730,7 +727,7 @@ header {
                 }
 
                 .text-footer {
-                    padding-top: 20px ;
+                    padding-top: 20px;
                     line-height: 20px;
                     color: $font-color;
                     font-size: 13px;
@@ -754,17 +751,16 @@ header {
             justify-content: space-around;
             max-width: auto;
             height: 200px;
-            
 
             .service {
                 text-transform: uppercase;
                 @include list-footer;
             }
-            
+
             .information {
                 text-transform: uppercase;
                 @include list-footer;
-            }  
+            }
         }
     }
     .detail-us {
@@ -805,15 +801,13 @@ header {
             #img-social {
                 padding: 0 5px;
 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
             }
         }
     }
 }
-
-
 
 /*responsive design*/
 
@@ -825,8 +819,8 @@ header {
         .menu-bottom {
             text-align: center;
             width: 100%;
-            margin:0 auto;
-            margin:0;
+            margin: 0 auto;
+            margin: 0;
             padding: 0;
 
             .list-menu-bottom {
@@ -845,7 +839,7 @@ header {
         .menu-search {
             transform: translateX(10px);
         }
-    } 
+    }
 
     .text-banner {
         text-align: center;
@@ -894,7 +888,7 @@ header {
 
     .detail-us {
         flex-wrap: wrap;
-        text-align: center; 
+        text-align: center;
 
         .social {
             margin-left: auto;
@@ -916,18 +910,15 @@ header {
     @include responsive-menu;
 }
 
-
 @media screen and (max-width: 768px) {
     .header-bottom {
         flex-wrap: wrap;
         display: flex;
-    } 
-
+    }
 
     .text-banner {
         text-align: center;
         flex-wrap: wrap;
-
     }
     .detail-us {
         flex-wrap: wrap;
@@ -940,7 +931,7 @@ header {
         }
     }
     #content-firm {
-        margin:0 auto;
+        margin: 0 auto;
         margin-left: auto;
         margin-right: auto;
 
@@ -979,7 +970,6 @@ header {
                 width: 100%;
             }
         }
-
     }
 
     .list-service {
@@ -995,7 +985,6 @@ header {
     }
 
     @include responsive-menu;
-    
 }
 
 @media screen and (max-width: 992px) {
@@ -1008,14 +997,8 @@ header {
     }
 }
 
-@media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1200px) {
     .main-content {
         max-width: 1000px;
     }
 }
-
-
-
-
-
-
