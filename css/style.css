@@ -135,7 +135,7 @@ header {
         transition: 0.5s all;
         transform: translate3d(0, 0, 0) rotate(45deg); }
 
-/*--end header--*/
+/*--end header-- */
 #banner {
   width: 100%;
   max-height: auto; }
@@ -184,30 +184,31 @@ header {
           background-color: #90b37f;
           transition: all 0.5s ease-in-out; }
 
-/* end banner*/
+/* --end banner-- */
 #content {
-  height: 2700px;
+  max-height: auto;
   background: #f8f8f8;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   #content .main-content {
     display: block;
-    padding: 50px 150px;
+    padding: 50px 300px;
     max-width: 100%;
-    display: block;
+    display: inline-block;
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto; }
     #content .main-content .side-bar {
+      padding: 0 20px;
+      max-width: 100%;
       display: flex;
-      max-height: auto;
       flex-direction: column; }
       #content .main-content .side-bar .categories {
         display: flex;
         flex-direction: column;
-        height: 150px;
-        max-width: 260px;
+        max-height: 150px;
+        max-width: 80%;
         border-bottom: 1px solid #dddddd; }
         #content .main-content .side-bar .categories label {
           font-weight: bold;
@@ -224,7 +225,7 @@ header {
                 transform: 0.2s all ease-in; }
       #content .main-content .side-bar .newsletter {
         height: 250px;
-        max-width: 260px;
+        max-width: 80%;
         padding: 25px 0px;
         border-bottom: 1px solid #dddddd; }
         #content .main-content .side-bar .newsletter label {
@@ -261,7 +262,7 @@ header {
       #content .main-content .side-bar .get-in-touch {
         padding: 20px 0;
         height: 150px;
-        max-width: 260px;
+        max-width: 80%;
         border-bottom: 1px solid #dddddd; }
         #content .main-content .side-bar .get-in-touch .icon-social {
           display: flex;
@@ -276,9 +277,8 @@ header {
       #content .main-content .side-bar .list-cart {
         display: flex;
         max-height: auto;
-        max-width: 260px;
-        flex-direction: column;
-        overflow: hidden; }
+        max-width: 100%;
+        flex-direction: column; }
         #content .main-content .side-bar .list-cart .cart1 {
           background-color: #fff;
           display: block;
@@ -291,7 +291,8 @@ header {
           display: flex;
           align-items: center;
           flex-direction: column;
-          line-height: 20px; }
+          line-height: 20px;
+          overflow: hidden; }
           #content .main-content .side-bar .list-cart .cart1 img:hover {
             cursor: pointer; }
           #content .main-content .side-bar .list-cart .cart1 label {
@@ -337,7 +338,8 @@ header {
           display: flex;
           align-items: center;
           flex-direction: column;
-          line-height: 20px; }
+          line-height: 20px;
+          overflow: hidden; }
           #content .main-content .side-bar .list-cart .cart2 img:hover {
             cursor: pointer; }
           #content .main-content .side-bar .list-cart .cart2 label {
@@ -383,7 +385,8 @@ header {
           display: flex;
           align-items: center;
           flex-direction: column;
-          line-height: 20px; }
+          line-height: 20px;
+          overflow: hidden; }
           #content .main-content .side-bar .list-cart .cart3 img:hover {
             cursor: pointer; }
           #content .main-content .side-bar .list-cart .cart3 label {
@@ -417,68 +420,353 @@ header {
               transition: 0.5s all ease-in-out; }
           #content .main-content .side-bar .list-cart .cart3 label {
             color: #f8923f; }
-    #content .main-content .main-list .sale-clothes {
-      display: grid;
-      grid-template-columns: 1fr 200px 1fr;
-      grid-auto-rows: 100px; }
-      #content .main-content .main-list .sale-clothes img:hover {
-        opacity: 0.5; }
-      #content .main-content .main-list .sale-clothes img:nth-child(1) {
-        height: 300px;
-        width: 300px;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2; }
-      #content .main-content .main-list .sale-clothes img:nth-child(2) {
-        height: 300px;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2; }
-      #content .main-content .main-list .sale-clothes img:nth-child(3) {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 5; }
-      #content .main-content .main-list .sale-clothes img:nth-child(4) {
-        height: 103px;
-        width: 200px;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 4; }
-      #content .main-content .main-list .sale-clothes img:nth-child(5) {
-        height: 103px;
-        width: 300px;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 4; }
-    #content .main-content .main-list .new-clothes {
-      display: flex;
-      max-height: 326px;
+    #content .main-content .main-list {
+      padding: 0 20px;
       max-width: 100%;
-      justify-content: center;
-      padding: 20px 0; }
-      #content .main-content .main-list .new-clothes .side-product {
+      display: block;
+      max-height: auto; }
+      #content .main-content .main-list .sale-clothes {
+        overflow: hidden;
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 20px;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto(3, 1fr);
+        grid-auto-rows: 100px; }
+        #content .main-content .main-list .sale-clothes img:hover {
+          opacity: 0.5; }
+        #content .main-content .main-list .sale-clothes img:nth-child(1) {
+          height: 300px;
+          width: 300px;
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2; }
+        #content .main-content .main-list .sale-clothes img:nth-child(2) {
+          height: 300px;
+          width: 300px;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2; }
+        #content .main-content .main-list .sale-clothes img:nth-child(3) {
+          height: 400px;
+          width: 300px;
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 5; }
+        #content .main-content .main-list .sale-clothes img:nth-child(4) {
+          height: 103px;
+          width: 300px;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 4;
+          grid-row-end: 4; }
+        #content .main-content .main-list .sale-clothes img:nth-child(5) {
+          height: 103px;
+          width: 300px;
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 4;
+          grid-row-end: 4; }
+      #content .main-content .main-list .new-clothes {
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 20px;
+        display: flex;
+        max-height: auto;
+        width: 100%;
+        justify-content: center;
+        padding: 20px 0; }
+        #content .main-content .main-list .new-clothes .side-product {
+          position: relative;
+          margin-right: auto;
+          width: 176px;
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: #e45757; }
+          #content .main-content .main-list .new-clothes .side-product label {
+            padding: 10px 30px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 20px;
+            display: inline-block;
+            max-width: 100%; }
+          #content .main-content .main-list .new-clothes .side-product .product {
+            margin-top: 10px;
+            line-height: 25px; }
+            #content .main-content .main-list .new-clothes .side-product .product li.active {
+              padding: 0 30px;
+              background: #efa0a0;
+              border-bottom: 1px solid #e66b6b; }
+            #content .main-content .main-list .new-clothes .side-product .product li {
+              padding: 0 30px;
+              line-height: 31px;
+              width: 100%;
+              border-bottom: 1px solid #e66b6b; }
+              #content .main-content .main-list .new-clothes .side-product .product li a {
+                color: #fff;
+                font-weight: 500;
+                font-size: 13px; }
+              #content .main-content .main-list .new-clothes .side-product .product li:hover {
+                background: #efa0a0; }
+        #content .main-content .main-list .new-clothes .list-product {
+          max-width: 100%;
+          min-height: auto;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          overflow-x: scroll; }
+          #content .main-content .main-list .new-clothes .list-product .item {
+            display: block;
+            max-width: 100%;
+            max-height: auto;
+            background-color: #fff; }
+            #content .main-content .main-list .new-clothes .list-product .item img {
+              padding: 20px;
+              width: 176px;
+              height: 228px; }
+              #content .main-content .main-list .new-clothes .list-product .item img:hover {
+                cursor: pointer; }
+      #content .main-content .main-list .title {
+        margin-top: 20px; }
+        #content .main-content .main-list .title span {
+          color: #333333;
+          font-size: 26px; }
+      #content .main-content .main-list .popular-clothes {
+        margin-top: 30px;
+        display: inline-block;
         display: flex;
         flex-direction: column;
-        background-color: #e45757;
-        padding: 20px; }
-        #content .main-content .main-list .new-clothes .side-product label {
-          color: #fff;
+        position: relative;
+        max-width: auto;
+        max-height: auto;
+        line-height: 30px; }
+        #content .main-content .main-list .popular-clothes .list-type {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 1;
+          height: 32px;
+          padding: 20px 0; }
+          #content .main-content .main-list .popular-clothes .list-type .type {
+            display: flex;
+            justify-content: flex-start;
+            max-width: 50%; }
+            #content .main-content .main-list .popular-clothes .list-type .type .accessories {
+              background-color: #90b37f;
+              padding: 5px 10px;
+              display: block;
+              border: none; }
+              #content .main-content .main-list .popular-clothes .list-type .type .accessories:hover {
+                cursor: pointer; }
+            #content .main-content .main-list .popular-clothes .list-type .type .jewely {
+              background-color: #999999;
+              padding: 5px 10px;
+              display: block;
+              border: none;
+              margin-left: 5px; }
+              #content .main-content .main-list .popular-clothes .list-type .type .jewely:hover {
+                cursor: pointer;
+                background-color: #90b37f; }
+          #content .main-content .main-list .popular-clothes .list-type .pagination button {
+            background-color: #cccccc;
+            padding: 5px;
+            border: none;
+            color: #fff;
+            width: 31px;
+            height: 31px; }
+            #content .main-content .main-list .popular-clothes .list-type .pagination button:hover {
+              background-color: #333; }
+        #content .main-content .main-list .popular-clothes .product {
+          min-height: auto;
+          overflow: hidden;
+          width: 100%;
+          border: 1px solid #eee;
+          margin: 0;
+          padding: 0; }
+          #content .main-content .main-list .popular-clothes .product .item {
+            border-left: 1px solid #eee;
+            float: left;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; }
+            #content .main-content .main-list .popular-clothes .product .item a {
+              font-weight: bolder;
+              font-size: 13px; }
+              #content .main-content .main-list .popular-clothes .product .item a:hover {
+                color: #e45757; }
+            #content .main-content .main-list .popular-clothes .product .item p {
+              color: #e45757; }
+            #content .main-content .main-list .popular-clothes .product .item img {
+              border-bottom: 1px solid #eee;
+              width: 174.3px; }
+              #content .main-content .main-list .popular-clothes .product .item img:hover {
+                cursor: pointer; }
+
+/* --end content-- */
+#content-firm {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  max-height: 155px;
+  background-color: #fff; }
+  #content-firm .list-firm {
+    overflow: hidden;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto; }
+    #content-firm .list-firm .pagination button {
+      background-color: #cccccc;
+      padding: 5px;
+      border: none;
+      color: #fff;
+      width: 31px;
+      height: 31px; }
+      #content-firm .list-firm .pagination button:hover {
+        background-color: #333; }
+
+#footer {
+  background: #383838;
+  color: #aaaaaa; }
+  #footer .list-service {
+    padding: 32px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-bottom: 1px solid  #3f3f3f; }
+    #footer .list-service .first-service {
+      display: flex;
+      justify-content: space-between;
+      width: 700px;
+      height: 200px; }
+      #footer .list-service .first-service .about {
+        border-right: 1px solid  #3f3f3f;
+        padding: 0 20px;
+        width: 250px; }
+        #footer .list-service .first-service .about label {
           text-transform: uppercase;
-          font-size: 20px; }
-        #content .main-content .main-list .new-clothes .side-product .product li a {
-          color: #fff; }
-      #content .main-content .main-list .new-clothes .list-product {
-        display: flex; }
-        #content .main-content .main-list .new-clothes .list-product .item {
-          background-color: #fff; }
-          #content .main-content .main-list .new-clothes .list-product .item img {
-            width: 175px;
-            height: 228px; }
+          margin: 0;
+          font-size: 17px;
+          line-height: 16px;
+          color: #999; }
+        #footer .list-service .first-service .about p {
+          padding-top: 20px;
+          line-height: 20px;
+          color: #aaaaaa;
+          font-size: 13px;
+          text-align: left; }
+        #footer .list-service .first-service .about img {
+          width: 150px;
+          margin-left: 50px; }
+      #footer .list-service .first-service .support {
+        border-right: 1px solid  #3f3f3f;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        box-sizing: border-box; }
+        #footer .list-service .first-service .support label {
+          text-transform: uppercase;
+          margin: 0;
+          font-size: 17px;
+          line-height: 16px;
+          color: #999; }
+        #footer .list-service .first-service .support ul {
+          padding-top: 20px; }
+          #footer .list-service .first-service .support ul li {
+            line-height: 20px; }
+            #footer .list-service .first-service .support ul li a {
+              color: #817979;
+              font-size: 13px; }
+              #footer .list-service .first-service .support ul li a:hover {
+                color: #e45757; }
+    #footer .list-service .second-service {
+      display: flex;
+      justify-content: space-around;
+      width: 700px;
+      height: 200px; }
+      #footer .list-service .second-service .service {
+        border-right: 1px solid  #3f3f3f;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        box-sizing: border-box; }
+        #footer .list-service .second-service .service a {
+          text-transform: uppercase;
+          margin: 0;
+          font-size: 17px;
+          line-height: 16px;
+          color: #999; }
+        #footer .list-service .second-service .service ul {
+          padding-top: 20px; }
+          #footer .list-service .second-service .service ul li {
+            line-height: 20px; }
+            #footer .list-service .second-service .service ul li a {
+              color: #817979;
+              font-size: 13px; }
+              #footer .list-service .second-service .service ul li a:hover {
+                color: #e45757; }
+      #footer .list-service .second-service .information {
+        border-right: 1px solid  #3f3f3f;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        box-sizing: border-box; }
+        #footer .list-service .second-service .information a {
+          text-transform: uppercase;
+          margin: 0;
+          font-size: 17px;
+          line-height: 16px;
+          color: #999; }
+        #footer .list-service .second-service .information ul {
+          padding-top: 20px; }
+          #footer .list-service .second-service .information ul li {
+            line-height: 20px; }
+            #footer .list-service .second-service .information ul li a {
+              color: #817979;
+              font-size: 13px; }
+              #footer .list-service .second-service .information ul li a:hover {
+                color: #e45757; }
+  #footer .detail-us {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1350px;
+    align-items: center; }
+    #footer .detail-us .text {
+      width: 650px;
+      font-size: 13px; }
+      #footer .detail-us .text .title-link {
+        display: inline-block;
+        color: #fff; }
+        #footer .detail-us .text .title-link:hover {
+          border-bottom: 1px solid #fff;
+          cursor: pointer; }
+      #footer .detail-us .text .link {
+        display: inline-block; }
+        #footer .detail-us .text .link:hover {
+          cursor: pointer;
+          color: #e45757; }
+    #footer .detail-us .social {
+      max-width: 650px;
+      display: flex;
+      justify-content: space-evenly; }
+      #footer .detail-us .social img {
+        padding: 0 5px; }
+        #footer .detail-us .social img:hover {
+          cursor: pointer; }
 
 /*responsive design*/
 @media screen and (max-width: 420px) {
@@ -510,14 +798,34 @@ header {
   .main-content {
     flex-wrap: wrap; }
     .main-content .side-bar {
-      display: block;
-      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: block; }
+      .main-content .side-bar .categories {
+        width: 100%; }
+      .main-content .side-bar .newsletter {
+        width: 100%; }
+        .main-content .side-bar .newsletter form {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+      .main-content .side-bar .get-in-touch {
+        width: 100%; }
+  .list-service {
+    flex-wrap: wrap; }
+  .detail-us {
+    flex-wrap: wrap;
+    text-align: center; }
+    .detail-us .social {
+      margin-left: auto;
+      margin-right: auto;
       padding: 20px 0; }
-      .main-content .side-bar .newsletter form input[type="text"] {
-        transform: translateX(30px); }
-      .main-content .side-bar .newsletter form button {
-        margin-left: auto;
-        margin-right: auto; }
+  .new-clothes {
+    flex-wrap: wrap;
+    width: 100%; }
   .get-in-touch {
     text-align: center; }
   .icon-social {
